@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: "${env.GITHUB_REPO}", credentialsId: 'Jenkins-Github'
+                git branch: 'main', url: "${env.GITHUB_REPO}", credentialsId: 'Jenkins-Github'
             }
         }
 
