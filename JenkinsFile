@@ -7,12 +7,6 @@ pipeline {
         DOCKERHUB_CREDENTIALS_ID = 'dockerhub-creds'
     }
 
-    stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/BskRao/cicdwithsai.git'
-            }
-        }
 
         stage('Build with Maven') {
             steps {
